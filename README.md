@@ -28,3 +28,9 @@ sleep(2).then( //wait for 2second
 #### 2- creating sequential promise, by wait for 1s, 2s and 3s sequentially. And showing result __*for each promise*__  is done.
 
 #### 3- creating parallel promise, by wait for 1s, 2s and 3s parallelly. And showing result when __*all promise*__ is done.
+
+#### 4- creating mixed promise, by wait 1s, 2s squentially, after then wait for 3s, 4s, 5s parallelly. 
+
+#### 5- createing sequential promise, by wait for 1s, __*undefined*__ and 3s sequentially. catch the error.
+
+#### 6- createing sequential promise, by wait for 1s, __*undefined*__, 3s, __*undefined*__ and 5s sequentially. catch _**both two**_ errors.
