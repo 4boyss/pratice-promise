@@ -11,7 +11,9 @@ Creating a promise function with `setTimeout(cb, interval)`, and make different 
 
 Example
 ```js
-// sleep for number mi-second, and resolve value as number+1, 1 is 1second
+// sleep for number mi-second
+// resolve value as number+1, 1 is 1second
+// when number is empty, reject promise
 const sleep = (number) => {
  ....
  setTimeout( ... )
