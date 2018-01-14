@@ -13,7 +13,7 @@ Example
 ```js
 // sleep for number mi-second
 // resolve value as number+1, 1 is 1second
-// when number is empty, reject promise
+// when number is empty, or negative(-1), reject promise
 const sleep = (number) => {
  ....
  setTimeout( ... )
@@ -33,4 +33,15 @@ sleep(2).then( //wait for 2second
 
 #### 5- createing sequential promise, by wait for 1s, __*undefined*__ and 3s sequentially. catch the error.
 
-#### 6- createing sequential promise, by wait for 1s, __*undefined*__, 3s, __*undefined*__ and 5s sequentially. catch _**both two**_ errors.
+#### 6- createing sequential promise, by wait for 5 different numbers, with random number as input.
+example
+```
+const = randomeNumber = (min, max) => { ... } // -5~5
+
+sleep(randomeNumber())
+.then(sleep(randomeNumber())
+.then((sleep(randomeNumber())
+.then((sleep(randomeNumber())
+.then((sleep(randomeNumber())
+
+```
